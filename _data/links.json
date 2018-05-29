@@ -1,16 +1,9 @@
 [
     {
-        "title": "文科中的技术宅",
-        "content": "文科中的技术宅",
-        "url": "https://www.townwang.com/",
-        "desc": "TownWang,文科中的技术宅,Android开发者",
-        "img": ""
-    },
-    {
-        "title": "Mu1er'Blog",
-        "content": "张阳阳_mu1er",
-        "url": "http://mu1er.cn/",
-        "desc": "对任何事务都充满好奇的技术爱好者",
+        "title": "Hysunny的博客",
+        "content": "Hysunny",
+        "url": "http://hysunny.me/",
+        "desc": "二师妹，Web小前端，东野圭吾迷妹.",
         "img": ""
     }
 ]
