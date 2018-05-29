@@ -1,37 +1,31 @@
-permalink: /blog/:year/:month/:title.html 
-include: ['.htaccess']
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
 markdown: kramdown
-highlights: pygments
-url: 
-cdn_url: 7u2t01.com1.z0.glb.clouddn.com
-lsi: false
-safe: true
-timezone: Asia/Shanghai
-auto: false 
+highlighter: pygments
+permalink: /posts/:title.html
+excerpt_separator: "<!-- more -->"
+
+github: panxw
+author: "潘学文"
+email: winfirm#163.com
+name: "潘学文个人博客"
+url: http://www.panxw.com
+domain: www.panxw.com
+all_categories: [
+["android", "Android开发","/posts/android.html"], 
+["program", "软件编程","/posts/program.html"],
+["web", "Web建站","/posts/web.html"], 
+["linux", "Linux相关","/posts/linux.html"],
+["read", "读书笔记","/posts/read.html"], 
+["other", "杂记","/posts/other.html"],
+["about", "关于","/about.html"]
+]
 
 paginate: 8
-paginate_path: "page:num"
+paginate_path: "posts/page:num"
+timezone: America/Los_Angeles
 
-kramdown:
-  auto_ids: true,
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
+collections:
+  docs:
+    output: true
 
-JB :
-  IMAGE_PATH : http://coolshell.info/images
-
-# presonal config
-domain: http://coolshell.info
-title: Lippi-浮生志
-description: Draw my life with code
-author: Lippi.OuYang
-email: ouyanglip@gmail.com
-github: LippiOuYang
-
-config:
-  js_dir:
-  img_dir:
-  css_dir:
+gems:
+ - jekyll-paginate

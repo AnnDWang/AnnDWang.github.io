@@ -1,22 +1,28 @@
 ---
-layout: default
+layout: page
 title: "关于：About"
 ---
+Welcome to visit my blog!
 
-## 个人简介：
+#### 1.Personal Info
+Name: Xuewen Pan(潘学文)  
+Gender: Male  
+City: Wuhan, China  
+Career: Software developer(Android&Linux&Web)  
 
-* DanWang
-* Web后台开发
-
-
-## 联系方式
-
-<p class="contact">
-邮箱: danwang0815@qq.com
-</p>
-
-### 关于本站：
-
-* 模板及代码fork自[Github](https://github.com/EZLippi/EZLippi.github.io)
+#### 2.My Links
+Blog: <http://www.panxw.com>  
+GitHub: <https://github.com/panxw>  
+LinkedIn: <http://www.linkedin.com/in/panxw>  
 
 
+#### 3.Contract
+Email: winfirm#163.com  
+QQ: 85902258  
+
+### 4.Domain For Sale
+danbaili.com  
+fangxinyu.com  
+maicaiwa.com  
+babytoycar.com  
+youth168.com  
