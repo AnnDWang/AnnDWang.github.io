@@ -1,44 +1,49 @@
 ---
-layout: index
-title: "强学力行、顺势而为"
+layout: default
+css: [blog.css]
+js: [blog.js]
 ---
+<div class="main animation-fadeUp">
+	{% for post in site.posts  %}
+		{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+		{% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
-<!-- Loop output paged posts -->
-{% for post in paginator.posts %}
-<h2>
-  <a href="{{ post.url }}">
-    {{ post.title }}
-  </a> 
-  <div class="post-date">
-	<span class="glyphicon glyphicon-time"></span>
-	{{ post.date | date:"%Y-%m-%d" }}
-  </div>
-</h2>
-<hr>
-{{ post.excerpt }}
-	<p><h3><a href="{{ post.url }}">阅读全文 &raquo;</a></h3></p>
-<hr>
-{% endfor %}
+		{% if forloop.first %}
+		<div class="list-group"><span>{{ this_year }}</span><ul>
+		{% endif %}
 
-<!-- Pager indicator -->
-<ul class="pager">
-  {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
-  <li class="previous">
-    <a href="/">
-      &larr; 上一页
-    </a>
-  </li>
-  {% else %}
-  <li class="previous">
-    <a href="/posts/page{{ paginator.previous_page }}/index.html">
-      &larr; 上一页
-    </a>
-  </li>
-  {% endif %} {% endif %} {% if paginator.next_page %}
-  <li class="next">
-    <a href="/posts/page{{ paginator.next_page }}/index.html">
-      下一页 &rarr;
-    </a>
-  </li>
-  {% endif %}
-</ul>
+		{% if this_year == next_year %}
+			<li class="info">
+				<span class="time md">{{ post.date | date: "%Y/%m/%d" }}</span>
+				<a href="{{site.context}}{{ post.url }}" class="title">{{ post.title }}</a>
+				<span class="categories md">&nbsp;
+					{% for cat in post.categories %}
+						<a href="{{site.context}}/pages/categories.html#{{ cat }}">{{ cat }}</a>
+					{% endfor %}
+				</span>
+			</li>
+		{% else %}
+			{% if forloop.last %}
+			<li class="info">
+				<span class="time md">{{ post.date | date: "%Y/%m/%d" }}</span>
+				<a href="{{site.context}}{{ post.url }}" class="title">{{ post.title }}</a>
+				<span class="categories md">&nbsp;
+					{% for cat in post.categories %}
+						<a href="{{site.context}}/pages/categories.html#{{ cat }}">{{ cat }}</a>
+					{% endfor %}
+				</span>
+			</li></ul></div>
+			{% else %}
+			<li class="info">
+				<span class="time md">{{ post.date | date: "%Y/%m/%d" }}</span>
+				<a href="{{site.context}}{{ post.url }}" class="title">{{ post.title }}</a>
+				<span class="categories md">&nbsp;
+					{% for cat in post.categories %}
+						<a href="{{site.context}}/pages/categories.html#{{ cat }}">{{ cat }}</a>
+					{% endfor %}
+				</span>
+			</li></ul></div><div class="list-group"><span>{{next_year}}</span><ul></ul>
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+</div>

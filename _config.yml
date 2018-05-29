@@ -1,31 +1,20 @@
-markdown: kramdown
-highlighter: pygments
-permalink: /posts/:title.html
-excerpt_separator: "<!-- more -->"
+encoding: utf-8
 
-github: panxw
-author: "潘学文"
-email: winfirm#163.com
-name: "潘学文个人博客"
-url: http://www.panxw.com
-domain: www.panxw.com
-all_categories: [
-["android", "Android开发","/posts/android.html"], 
-["program", "软件编程","/posts/program.html"],
-["web", "Web建站","/posts/web.html"], 
-["linux", "Linux相关","/posts/linux.html"],
-["read", "读书笔记","/posts/read.html"], 
-["other", "杂记","/posts/other.html"],
-["about", "关于","/about.html"]
-]
+# seo
+title: TMaize Blog
+description: TMaize Blog
+keywords: TMaize,Blog,Java,Android,Html,Css,Js,算法
+author: TMaize
 
-paginate: 8
-paginate_path: "posts/page:num"
-timezone: America/Los_Angeles
+# "","/blog"
+context: ""
+"siteMapPrefix": "http://blog.tmaize.net"
 
-collections:
-  docs:
-    output: true
+## 文章url前缀 context/自定义，下面的context为''
+permalink: /posts/:year/:month/:day/:title.html
 
-gems:
- - jekyll-paginate
+copyright: 2016
+record: "皖ICP备16016174号"
+
+coderay:
+  coderay_tab_width: 4
