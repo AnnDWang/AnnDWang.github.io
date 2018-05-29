@@ -5,8 +5,6 @@ title: 关于我
 
 > 用于记录学习笔记
 
-现在已经修改为使用[site-generator](https://github.com/TMaize/site-generator)生成,迁移到BAE
-
 
 ## 相关技能
 
