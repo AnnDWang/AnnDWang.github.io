@@ -18,3 +18,8 @@ record: ""
 
 coderay:
   coderay_tab_width: 4
+  
+markdown: kramdown
+kramdown:
+  input:  GFM
+  use_coderay: true
