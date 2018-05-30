@@ -8,5 +8,6 @@ categories: [Machine Learning]
 
 ## Model Representation
 
-To establish notation for future use, we'll use $ x^(i) $ to denote the input variables, also called input features. and $ y^(i) $ to denote the output or target variable that we are trying to predict.
+To establish notation for future use, we'll use x^(i) to denote the input variables, also called input features. and y^(i) to denote the output or target variable that we are trying to predict.
 
+ A pair (x^{(i)} , y^{(i)} )
