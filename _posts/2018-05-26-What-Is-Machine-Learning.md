@@ -4,6 +4,8 @@ title: What is machine learning
 categories: [Machine Learning]
 ---
 
+> 内容来自于[机器学习课程](https://www.coursera.org/learn/machine-learning/home/welcome)
+
 ## two definitions
 Arthur Samuel described it as: "the field of study that gives computers the ability to learn without being explicitly programmed." This is an older, informal definition.
 

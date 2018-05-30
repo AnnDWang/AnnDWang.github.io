@@ -4,6 +4,8 @@ title: Unsupervised Learning
 categories: [Machine Learning]
 ---
 
+> 内容来自于[机器学习课程](https://www.coursera.org/learn/machine-learning/home/welcome)
+
 Unsupervised learning allows us to approach problems with little or no idea what our results should look like. We can derive structure from data where we don't necessarily know the effect of the variables.
 
 We can derive this structure by clustering the data based on relationships among the variables in the data.
