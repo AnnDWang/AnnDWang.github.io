@@ -34,3 +34,16 @@ learning rate
 
 
 gradient descent can converge to a local minimum, even with the learning rate α fixed.
+
+
+## Gradient Descent For Linear
+
+convex function
+
+导数部分推导过程
+
+![推导过程](5.png)
+
+The point of all this is that if we start with a guess for our hypothesis and then repeatedly apply these gradient descent equations, out hypothesis will become more and more accurate.
+
+batch gradient descent
