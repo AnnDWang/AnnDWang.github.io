@@ -62,6 +62,18 @@ X=Ureduce*X
 
 ![](2.png)
 
+# Advice for applying PCA
+
+加速监督学习
+
+PCA可以用于数据压缩：减少所需的内存，加速算法的运行
+
+PCA可以用于可视化，plot 2维或者3维的图
+
+PCA不好的应用：阻止过拟合，应该使用正则化
+
+
+
 
 
 
