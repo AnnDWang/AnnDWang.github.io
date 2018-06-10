@@ -31,3 +31,54 @@ clustering
 Elbow method，选择不同的k值，画出cost function J的值
 
 根据聚类的目的来确定数目
+
+# Data Compression
+
+数据压缩可以减少内存占用空间，还可以加速算法运行
+
+# Data Visualization
+
+# Principal Component Analysis algorithm
+
+预处理数据：feature scaling/mean normalization
+
+compute covariance matrix
+
+compute eigenvectors of matrix
+
+计算出U之后取前k列，转置，乘以X
+
+# Recontruction from compressed representation
+
+近似重构原始的数据
+
+X=Ureduce*X
+
+# choosing the number of principal components
+
+选择K的值
+
+![](1.png)
+
+![](2.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
