@@ -1,6 +1,6 @@
 ---
 layout: mypost
-title: Unsupervised Learning And Dimensionality
+title: Unsupervised Learning And Dimensionality Reduction
 categories: [Machine Learning]
 ---
 
